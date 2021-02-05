@@ -2,7 +2,7 @@
 $servidor= "Localhost";
 $usuario= "root";
 $senha= "";
-$dbname= "tcc";
+$dbname= "";
 
 $conn = mysqli_connect($servidor,$usuario,$senha,$dbname);
 
