@@ -8,7 +8,10 @@
 	<title>Rocket Center</title>
 	<style type="text/css">	
 	body{
-		background-image: url("image/fundo.jpg") !important;
+			background-image: url("static/image/fundo.jpg");
+			background-repeat: no-repeat;
+	  		background-attachment: fixed;
+	  		background-size: 100% 100%;
 		}
 </style>
 </head>
@@ -17,31 +20,65 @@
 <!-- criando navbar -->
  
 
-<div class="container" style="background: black">
+<div class="container" style="background: black;">
+
 <nav class="navbar" style="background-color: #FFFF33;">
-	<a href="index.html">
-		<img src="image/rocket.svg" width="50px" height="50px" lazyload>
+	<a href="index.html" style="text-decoration: none;">
+	<span style="font-family: 'Indie Flower', cursive; font-size: 24px; justify-content: center; align-items: center; ">ROCKET CENTER
+		<img src="static/image/rocket.svg" width="50px" height="50px">
+	</span>
 	</a>
-	<center>
-	<input type="text" class="navbar-brand mx-auto position-relative" placeholder="Pesquisa">
-	</center>
+
+	<input type="text" class="navbar-brand mt-0 position-relative" placeholder="Pesquisa">
 </nav>
 <!---->
-<div style="display: flex !important;  
-  flex-wrap: wrap !important;">
+<div style="display: flex;  
+  flex-wrap: wrap;  box-shadow: white;">
 
   <form action="post.php">
-<button type="submit" class="btn btn-lg d-flex p-2" id="like" style="margin-top: 50px; background-color: gray; width: 300px; height: 200px; align-items: center; justify-content: center; margin-right: 70px;">criar Post</button>
+	<button type="submit" class="btn btn-lg d-flex p-2" style="margin-top: 50px; background-color: gray; width: 300px; height: 400px; align-items: center; justify-content: center; margin-right: 70px; margin-bottom: 10px;"><span style="font-size: 22px;">criar Post</span></button>
 
-<div style="padding-left: 70px; margin-top: 10px; margin-bottom: 20px;">
-<button type="button" style="background: #ffffff;"><img src="image/like.svg" width="40px" height="40px" ><br>0</button>
-<button type="button"><img src="image/dislike.svg" width="40px" height="40px"><br>0</button>
-</div>
-	</form>
+	 <!--  <div style="padding-left: 70px; margin-top: 10px; margin-bottom: 20px; width: 100%; height: 100%;">
+	<button type="button" style="background: #bac8d3;" id="likes" onclick="myFunctionLike()"><img src="static/image/like.png" -width="40px" height="40px"><br><p>
+		<script type="text/javascript">
+			var num = 0;
+		document.write(num);
+		function myFunctionLike(){
+			document.getElementById("likes").innerHTML =
+
+			 '<button type="button" style="background: green;" id="likes" onclick="myFunctionLike()"><img src="static/image/likeSelecionado.png" width="40px" height="40px"><br><p> 1 </p></button>';
+
+			 document.getElementById("dis").innerHTML = '<button type="button" style="background: #bac8d3;" id="dis" onclick="myFunctionDis()"><img src="static/image/dislike.png" width="40px" height="40px"><br><p>0</p></button>'
+		}
+
+	</script>
+	</p></button>
+	<button type="button" style="background: #bac8d3;" id="dis" onclick="myFunctionDis()"><img src="static/image/dislike.png" width="40px" height="40px"><br>
+		<script type="text/javascript">
+			var num = 0;
+		document.write(num);
+		function myFunctionDis(){
+			document.getElementById("dis").innerHTML =
+
+			 '<button type="button" style="background: red;" id="dis" onclick="myFunctionDis()"><img src="static/image/dislikeSelecionado.png" width="40px" height="40px"><br><p> 1 </p></button>';
+
+			 document.getElementById("likes").innerHTML = '<button type="button" style="background: #bac8d3;" id="likes" onclick="myFunctionLike()"><img src="static/image/like.png" -width="40px" height="40px"><br><p>0</p></button>'
+
+
+		}
+	</script>
+	</button>
+ </div> -->
+ 
+  </form>
 
 
 </div>
 </div>
+
+
+
+
 
 <!-- começo Chat-->
 <script type="text/javascript">
@@ -55,10 +92,11 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!---->
+<!----> 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
