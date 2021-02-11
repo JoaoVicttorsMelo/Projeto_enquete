@@ -4,4 +4,4 @@
 # Slides claros e de fácil reparação
 ![alt text](https://imgur.com/V9XRnYq.png)
 # Sistema de likes e Botão para criar enquetes
-![alt text](https://imgur.com/hnvKYV5.pnh)
+![alt text](https://imgur.com/hnvKYV5.png)
